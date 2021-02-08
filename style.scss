@@ -1,0 +1,240 @@
+body{
+    margin:0;
+    width:100vw;
+    height:100vh;
+
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    font-family: 'Poppins';
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-vertical{
+    width:5vw;
+    height: 100vh;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    color: #fff;
+
+    *{
+        cursor: pointer;
+    }
+
+    .icon{
+        transition: 0.25s;
+        &:hover{
+            color: #aaffaa;
+        }
+    }
+
+    .sidescroll{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 40vh;
+
+        .scrollpos{
+            position: absolute;
+            width: 6px;
+            margin-left: -2px;
+            height: 10vh;
+            border-radius: 2px;
+            background: #aaffaa;
+        }
+        .scrollbar{
+            width: 2px;
+            height:40vh;
+            background:#ffffff88;
+        }
+
+        .pagenum{
+            margin:0.5rem;
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            transform: rotate(180deg);
+
+        }
+    }
+
+    .social{
+        padding-top: 3vh;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: space-between;
+
+        *{
+            margin:1rem;
+        }
+        
+        *:hover{
+            color: #aaffaa;
+        }
+    }
+}
+
+.right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+}
+
+.nav-horizontal{
+    color: #fff;
+    padding:2rem 2rem 2rem 0rem;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+    .menu{
+        flex:1;
+
+        #about{
+            cursor:pointer;
+        }
+    }
+    .menu a{
+        margin:0rem 2rem 0 0;
+        color: #fff;
+        text-decoration: none;
+        cursor: not-allowed;
+
+        &:hover{
+            color: #aaffaa;
+        }
+    }
+
+    .nav-actions{
+        color: #fff;
+        text-decoration: none;
+        *{
+            margin:0rem 0 0 2rem;
+            cursor: pointer;
+        }
+        *:hover{
+            color: #aaffaa;
+        }
+    }
+
+    *{
+    }
+}
+
+.container{
+    flex:1;
+    padding-top: 10rem;
+
+    .big-text{
+        font-size: 4rem;
+        color: #fff;
+        font-weight: bold;
+        line-height: 1;
+    }
+    .cta{
+        width: fit-content;
+        font-weight: bold;
+        padding: 1rem 3rem;
+        background:#aaffaa;
+        cursor: pointer;
+        color: #333;
+        border-radius:50px;
+
+        transition: 0.25s ease-in-out;
+
+        margin-top:2rem;
+        &:hover{
+            filter: brightness(0.9);
+        }
+    }
+}
+
+.contents{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+
+    .content-video{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img{
+            max-height: 100%;
+            position: relative;
+        }
+
+        .content-video-play-button{
+            position: absolute;
+            border-radius: 50%;
+            background:#fff;
+            color: #333;
+            padding:1rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+
+            &:hover{
+                filter: brightness(0.9);
+            }
+        }
+    }
+    .content-item{
+        height:10vh;
+        flex:1;
+        background:#000000aa;
+        padding: 2rem 8rem 2rem 4rem;
+        transition: 0.25s;
+        cursor: pointer;
+
+        .content-number{
+            color: #aaffaa;
+            margin-bottom: 1rem;
+        }
+        .content-title{
+            color: #fff;
+        }
+        .content-desc{
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+
+        &:hover{
+            background:#000000ee;
+        }
+    }
+}
+
+
+.modal a{
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+.modal li{
+    font-size: 0.8rem;
+}
